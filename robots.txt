@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://gluecksbringerei.github.io/sitemap.xml 
