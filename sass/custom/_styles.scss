@@ -1,2 +1,45 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+body {
+  font-family: $sans;
+  > header h1 {
+    font-size: 3.2em;
+  }
+  > div {
+    border-bottom: none;
+    > div {
+      border-right: none;
+    }
+  }
+}
+
+article {
+  header {
+    h1 {
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+aside.sidebar {
+  border: none;
+}
+
+.entry-title {
+  font-family: $post-title-font-family;
+  color: $title-color;
+  text-transform: lowercase;
+}
+
+article + article {
+  .blog-index & {
+    background: none;
+  }
+}
+
+#content div.pagination {
+  background: none;
+}
