@@ -12,7 +12,12 @@ body {
 }
 
 article {
+  &:first-child {
+    padding-top: 0;
+  }
   header {
+//    margin-bottom: 0;
+    background: none;
     h1 {
       a:hover {
         text-decoration: none;
@@ -26,6 +31,14 @@ aside.sidebar {
 }
 
 #content, #content .blog-index {
+  > div, > article {
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+  article header {
+    padding-bottom: inherit;
+  }
   article h1 {
     font-family: $post-title-font-family;
     font-size: $post-title-font-size;
