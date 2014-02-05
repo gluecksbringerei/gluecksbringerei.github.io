@@ -9,10 +9,8 @@
   <meta name="author" content="Tina Pehl">
 
   
-  <meta name="description" content="Blog Archive 2014 Jetzt Wird&#8217;s Ernst &#8230;
-Jan 03 2014 2013 Lorem Ipsum
-Dec 17 2013 posted in backen, kochen Labore Et Dolore Magna
-Dec 04 &hellip;">
+  <meta name="description" content="Blog Archive 2014 Berlin, Berlin, Ich Fliege Nach Berlin Oder Die Glücksbringerin Gehtins NähCamp
+Jan 10 2014 posted in berlin, nähen Na Endlich Mal &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -29,6 +27,43 @@ Dec 04 &hellip;">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script language="Javascript" type="text/javascript">
+$(document).ready(
+  function() {
+    (function($) {
+      $(".fancybox[data-content-id]").each(function() {
+        this.href = $(this).data('content-id');
+      });
+      $(".fancybox").fancybox({
+        beforeLoad: function() {
+          var el, 
+              id = $(this.element).data('title-id');
+
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+          if ($(this).data('content')) {
+            this.content = $(this).data('content');
+          }
+        },
+        helpers: {
+          title: {
+            type: 'inside'
+          }
+        }
+      });
+    })(jQuery);
+  }
+);
+</script>
+
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -95,123 +130,50 @@ Dec 04 &hellip;">
 
 <article>
   
+<h1><a href="/blog/2014/01/10/berlin-berlin-ich-fliege-nach-berlin/">Berlin, Berlin, Ich Fliege Nach Berlin Oder Die Glücksbringerin Gehtins NähCamp</a></h1>
+<time datetime="2014-01-10T21:09:22+01:00" pubdate><span class='month'>Jan</span> <span class='day'>10</span> <span class='year'>2014</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/berlin/'>berlin</a>, <a class='category' href='/blog/categories/nahen/'>nähen</a></span>
+</footer>
+
+
+</article>
+
+
+
+<article>
+  
+<h1><a href="/blog/2014/01/08/na-endlich/">Na Endlich Mal Wieder Kino! Hobbit 2 Wir Kommen!</a></h1>
+<time datetime="2014-01-08T21:09:59+01:00" pubdate><span class='month'>Jan</span> <span class='day'>08</span> <span class='year'>2014</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/hobbit/'>hobbit</a>, <a class='category' href='/blog/categories/kino/'>kino</a>, <a class='category' href='/blog/categories/lotr/'>lotr</a>, <a class='category' href='/blog/categories/neuseeland/'>neuseeland</a></span>
+</footer>
+
+
+</article>
+
+
+
+<article>
+  
+<h1><a href="/blog/2014/01/06/nachtraegliche-neujahrs-kaffee-sause/">Nachträgliche Neujahrs-Kaffee-Sause</a></h1>
+<time datetime="2014-01-06T21:08:32+01:00" pubdate><span class='month'>Jan</span> <span class='day'>06</span> <span class='year'>2014</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/backen/'>backen</a>, <a class='category' href='/blog/categories/cupcakes/'>cupcakes</a></span>
+</footer>
+
+
+</article>
+
+
+
+<article>
+  
 <h1><a href="/blog/2014/01/03/jetzt-wirds-ernst-dot-dot-dot/">Jetzt Wird&#8217;s Ernst &#8230;</a></h1>
 <time datetime="2014-01-03T21:11:49+01:00" pubdate><span class='month'>Jan</span> <span class='day'>03</span> <span class='year'>2014</span></time>
-
-
-</article>
-
-
-
-  
-  <h2>2013</h2>
-
-<article>
-  
-<h1><a href="/blog/2013/12/17/lorem-ipsum/">Lorem Ipsum</a></h1>
-<time datetime="2013-12-17T21:08:32+01:00" pubdate><span class='month'>Dec</span> <span class='day'>17</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/backen/'>backen</a>, <a class='category' href='/blog/categories/kochen/'>kochen</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/12/04/labore-et-dolore-magna/">Labore Et Dolore Magna</a></h1>
-<time datetime="2013-12-04T21:09:59+01:00" pubdate><span class='month'>Dec</span> <span class='day'>04</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/kochen/'>kochen</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/11/23/elitr/">Elitr</a></h1>
-<time datetime="2013-11-23T21:09:22+01:00" pubdate><span class='month'>Nov</span> <span class='day'>23</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/backen/'>backen</a>, <a class='category' href='/blog/categories/kochen/'>kochen</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/11/12/eirmod-tempor-invidunt/">Eirmod Tempor Invidunt</a></h1>
-<time datetime="2013-11-12T21:09:45+01:00" pubdate><span class='month'>Nov</span> <span class='day'>12</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/backen/'>backen</a>, <a class='category' href='/blog/categories/nahen/'>nähen</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/10/27/dolor-sit/">Dolor Sit</a></h1>
-<time datetime="2013-10-27T21:08:51+01:00" pubdate><span class='month'>Oct</span> <span class='day'>27</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/backen/'>backen</a>, <a class='category' href='/blog/categories/kochen/'>kochen</a>, <a class='category' href='/blog/categories/nahen/'>nähen</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/10/13/consetetur-sadipscing/">Consetetur Sadipscing</a></h1>
-<time datetime="2013-10-13T22:09:12+02:00" pubdate><span class='month'>Oct</span> <span class='day'>13</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/kochen/'>kochen</a>, <a class='category' href='/blog/categories/nahen/'>nähen</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/10/05/sed-diam-nonumy/">Sed Diam Nonumy</a></h1>
-<time datetime="2013-10-05T22:09:34+02:00" pubdate><span class='month'>Oct</span> <span class='day'>05</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/nahen/'>nähen</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/10/05/amet/">Amet</a></h1>
-<time datetime="2013-10-05T22:09:01+02:00" pubdate><span class='month'>Oct</span> <span class='day'>05</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/backen/'>backen</a>, <a class='category' href='/blog/categories/nahen/'>nähen</a></span>
-</footer>
 
 
 </article>
@@ -230,23 +192,19 @@ Dec 04 &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/01/10/berlin-berlin-ich-fliege-nach-berlin/">Berlin, Berlin, Ich Fliege Nach Berlin Oder Die Glücksbringerin Gehtins NähCamp</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/08/na-endlich/">Na Endlich Mal Wieder Kino! Hobbit 2 Wir Kommen!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/06/nachtraegliche-neujahrs-kaffee-sause/">Nachträgliche Neujahrs-Kaffee-Sause</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/03/jetzt-wirds-ernst-dot-dot-dot/">Jetzt Wird's Ernst ...</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/12/17/lorem-ipsum/">Lorem Ipsum</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/12/04/labore-et-dolore-magna/">Labore Et Dolore Magna</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/11/23/elitr/">Elitr</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/11/12/eirmod-tempor-invidunt/">Eirmod Tempor Invidunt</a>
       </li>
     
   </ul>
