@@ -25,9 +25,17 @@ figcaption {
 .flickr-thumbnail {
   @extend .flex-content;
   @extend .basic-alignment;
-  @include shadow-box;
+  @include shadow-box(#fff .5em solid, 1px 1px 5px #999, 0.25em);
   @include box-sizing(content-box);
   background: #fff;
+  
+  &:hover {
+    @include box-shadow(2px 2px 8px #999);
+  }
+  
+  figcaption {
+    margin-top: 1em;
+  }
 }
 
 .flickr-thumbnail .description {
