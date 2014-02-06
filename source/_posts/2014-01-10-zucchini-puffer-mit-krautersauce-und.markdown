@@ -3,7 +3,7 @@ layout: post
 title: "Zucchini-Puffer mit Kräutersauce und Räucherlachs"
 date: 2014-01-10 22:08:32 +0100
 comments: true
-categories: [gemüse, kochen, zucchini]
+categories: [gemuese, kochen, zucchini]
 ---
 Gestern gab es im Hause Glücksbringer einen kleinen Test. Ich kochte auf Empfehlung meines Kollegen Fabi folgendes Rezept:
 

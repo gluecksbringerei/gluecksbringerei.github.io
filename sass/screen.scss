@@ -6,5 +6,6 @@
 @import "custom/layout";
 @import "base";
 @import "partials";
-@import "plugins/plugins";
+@import "plugins/font-awesome/variables";
+@import "plugins/**/*";
 @import "custom/styles";

@@ -3,7 +3,7 @@ layout: post
 title: "Berlin, Berlin, ich fliege nach Berlin oder die Glücksbringerin gehtins NähCamp"
 date: 2014-01-10 21:09:22 +0100
 comments: true
-categories: [berlin, nähen]
+categories: [berlin, naehen]
 ---
 Gestern habe ich mich, tollkühn wie ich bin, für ein NähCamp in Berlin angemeldet! Klein-Tinchen fliegt zum ersten Mal allein irgendwo hin!?! Mit Sack und Pack und Nähmaschine! ;-) Naja, das wird ja mit 36 mal langsam Zeit, oder!?!
 

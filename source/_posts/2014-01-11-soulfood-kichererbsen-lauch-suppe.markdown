@@ -3,7 +3,7 @@ layout: post
 title: "Soulfood: Kichererbsen-Lauch-Suppe"
 date: 2014-01-11 20:08:32 +0100
 comments: true
-categories: [gemüse, kichererbsen, kochen, soulfood, suppe]
+categories: [gemuese, kichererbsen, kochen, soulfood, suppe]
 ---
 Heute ist genau das richtige Wetter für eine kräftige Suppe. Nieselregen, grau in grau, nicht Herbst, nicht Winter. Deshalb möchte ich Dir eine meiner Lieblingssuppen, eine Kichererbsen-Lauch-Suppe nach Jamie Oliver, vorstellen:
 
