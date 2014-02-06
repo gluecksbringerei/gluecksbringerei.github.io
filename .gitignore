@@ -5,6 +5,7 @@
 .pygments-cache
 .idea
 .flickr-cache
+*.sublime-*
 _deploy
 public
 sass.old
