@@ -9,17 +9,17 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "Title"
+          label: "Titel"
           value: ""
           type: "text"
       - name: "categories"
         field:
           element: "multiselect"
-          label: "Categories"
+          label: "Kategorien"
           placeholder: "Create or choose"
           alterable: true
       - name: "comments"
         field:
           element: checkbox
-          label: "Allow comments"
+          label: "Kommentare erlaubt?"
           value: "true"
