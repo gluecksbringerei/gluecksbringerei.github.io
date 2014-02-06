@@ -1,3 +1,17 @@
 prose:
-  rooturl: "source/_posts"
+  rooturl: "source"
   siteurl: "http://gluecksbringerei.github.io/blog/"
+  ignore:
+    - _includes
+    - _layouts
+    - assets
+    - blog
+    - fancybox
+    - fonts
+    - images
+    - javascripts
+    - stylesheets
+    - atom..xml
+    - favicon.png
+    - index.html
+    - robots.txt
