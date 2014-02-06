@@ -1,6 +1,5 @@
 prose:
   rooturl: 'source/_posts'
-  siteurl: 'http://gluecksbringerei.github.io/'
   metadata:
     source/_posts:
       - name: "layout"
