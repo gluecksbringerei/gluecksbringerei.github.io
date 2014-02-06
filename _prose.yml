@@ -1,17 +1,33 @@
 prose:
-  rooturl: "source"
+  rooturl: "source/_posts"
   siteurl: "http://gluecksbringerei.github.io/blog/"
-  ignore:
-    - _includes
-    - _layouts
-    - assets
-    - blog
-    - fancybox
-    - fonts
-    - images
-    - javascripts
-    - stylesheets
-    - atom..xml
-    - favicon.png
-    - index.html
-    - robots.txt
+  metadata:
+    source/_posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+          type: "text"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: ""
+          placeholder: "Tina Pehl"
+          type: "text"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Post Category"
+          placeholder: "Create or choose"
+          alterable: true
+      - name: "comments"
+        field:
+          element: checkbox
+          label: "Comments"
+          value: "true"
