@@ -11,7 +11,7 @@ Seit ein paar Monaten bin ich Blog-infiziert. Ich sehe mir täglich wunderschön
 
 Da ich ja selber einige Ambitionen in diesen Bereichen habe, dachte ich mir, ich fange auch an. Mit dem bloggen. Weil ich es toll finde und es bestimmt Spaß bringt.
 
-{% flickr_image 12309233003 z center %}
+{% flickr_image 12309233003 n center %}
 
 Vielleicht interessiert es Dich ja? Dann schau doch bald wieder vorbei!
 

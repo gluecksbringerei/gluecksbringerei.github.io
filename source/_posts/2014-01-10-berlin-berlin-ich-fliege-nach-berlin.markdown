@@ -11,7 +11,7 @@ Ich freue mich schon riesig auf dieses Wochenende, nette Mädels kennenlernen, g
 
 Falls es Dich interessiert, hier gibts die Infos dazu:
 
-[![NähCamp](http://3.bp.blogspot.com/-fJUXw-u2jDY/Us3ZWhM3gYI/AAAAAAAAAD0/68HbKwRRz9Y/s1600/Naehcamp_Logo.png)](http://pulsinchen.blogspot.de/2014/01/nahen-netzwerken.html)
+[{% img center http://3.bp.blogspot.com/-fJUXw-u2jDY/Us3ZWhM3gYI/AAAAAAAAAD0/68HbKwRRz9Y/s1600/Naehcamp_Logo.png 400 %}](http://pulsinchen.blogspot.de/2014/01/nahen-netzwerken.html)
 
 Für das Camp kommt ja ausserdem mein gebuchter Nähkurs "Kinderkleidung" im HEI Ende Januar wie gerufen! Da bin ich auch schon ganz gespannt, was ich da "zaubern" werde. Da werde ich mir noch ein bisschen was von der Schneiderin abgucken und bin dann Ende März bereits für das Abenteuer Berlin!
 

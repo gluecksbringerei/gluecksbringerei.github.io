@@ -1,8 +1,11 @@
+require 'securerandom'
+
 module Jekyll
 
   class ReceiptTag < Liquid::Block
 
     def initialize(tag_name, title, tokens)
+      @id = SecureRandom.uuid()
       @title = title.strip!
       super
     end
@@ -20,7 +23,8 @@ module Jekyll
         warn "         Use RubyPanths' method"
         output = RubyPants.new(output).to_html
       end
-      "<div class='receipt'><h3>#{@title}</h3>#{output}</div>"
+      printThis = "$('\##{@id}').printThis({pageTitle: '#{@title}'})"
+      "<div id='#{@id}' class='receipt'><div class='header'><h3>#{@title}</h3><span class='print' title='Dieses Rezept ausdrucken' onclick=\"#{printThis}\"><i class='fa fa-print'></i></span></div>#{output}</div>"
     end
 
   end
