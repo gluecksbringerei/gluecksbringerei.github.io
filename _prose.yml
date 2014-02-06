@@ -1,3 +1,3 @@
 prose:
-  rooturl: "_posts"
+  rooturl: "source/_posts"
   siteurl: "http://gluecksbringerei.github.io/"
