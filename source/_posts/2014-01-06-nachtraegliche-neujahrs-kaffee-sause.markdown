@@ -38,5 +38,5 @@ Und schau mal, was mir eine Nachbarin mitgebracht hat:
 
 Als hätte sie von meinem Blog-Logo gewusst, obwohl es noch gar nicht online war! Ich bin ganz glücklich mit so viel Glück und das kann ja nur Gutes bedeuten für meinem Blog-Start, oder?
 
-Bis bald und bleib glücklich
+Bis bald und bleib glücklich  
 die glücksbringerin
