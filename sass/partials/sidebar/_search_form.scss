@@ -1,0 +1,22 @@
+.search-section {
+  form {
+    margin: 0; padding: 0;
+    .search {
+      padding: .3em .5em;
+      font-size: 1em;
+      font-family: $sans;
+      box-sizing: border-box;
+      width: 100%;
+      @include border-radius(.33em);
+      @include box-shadow(lighten($nav-bg, 2) 0 1px);
+      border: 1px solid $nav-border;
+      color: #888;
+      &:focus {
+        color: #444;
+        border-color: #80b1df;
+        @include box-shadow(#80b1df 0 0 4px, #80b1df 0 0 3px inset);
+        outline: none;
+      }
+    }
+  }
+}

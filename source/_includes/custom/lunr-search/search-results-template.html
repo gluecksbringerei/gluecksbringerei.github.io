@@ -1,0 +1,15 @@
+{% raw %}
+<script id="search-results-template" type="text/x-handlebars-template">
+  {{#entries}}
+    <article>
+        <h1><a href="{{url}}">{{title}}</a></h1>
+        <time datetime="{{date}}" pubdate>{{date}}</time>
+        {{#if categories}}
+            <footer>
+                <span class="categories">posted in {{#each categories}}{{this}} {{/each}}</span>
+            </footer>
+        {{/if}}
+    </article>
+  {{/entries}}
+</script>
+{% endraw %}

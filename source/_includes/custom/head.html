@@ -1,7 +1,27 @@
-<script src="{{ root_url }}/javascripts/printThis.js"></script>
-<script src="{{ root_url }}/javascripts/monthly_archive.js"></script>        
 <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<!-- Custom JS -->
+<script src="{{ root_url }}/javascripts/printThis.js"></script>
+<script src="{{ root_url }}/javascripts/monthly_archive.js"></script>
+
+<!-- lunr search support -->
+{% include custom/lunr-search/search-results-template.html %}
+<script src="{{ root_url }}/javascripts/libs/lunr.min.js"></script>
+<script src="{{ root_url }}/javascripts/libs/handlebars.js"></script>
+<script src="{{ root_url }}/javascripts/libs/jXHR.js"></script>
+<script src="{{ root_url }}/javascripts/libs/URI.min.js"></script>
+<script src="{{ root_url }}/javascripts/lunr_search.js"></script>
+<script language="Javascript" type="text/javascript">
+    $(document).ready(function() {
+        return new LunrSearch('#search-query', {
+            indexUrl: "/search.json",
+            results: "#search-results",
+            entries: ".entries",
+            template: "#search-results-template"
+        });
+    });
+</script>
