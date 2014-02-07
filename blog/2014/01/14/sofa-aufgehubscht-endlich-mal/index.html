@@ -63,13 +63,48 @@ $(document).ready(
 );
 </script>
 
-  <script src="/javascripts/printThis.js"></script>
-<script src="/javascripts/monthly_archive.js"></script>        
-<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<!-- Custom JS -->
+<script src="/javascripts/printThis.js"></script>
+<script src="/javascripts/monthly_archive.js"></script>
+
+<!-- lunr search support -->
+
+<script id="search-results-template" type="text/x-handlebars-template">
+  {{#entries}}
+    <article>
+        <h1><a href="{{url}}">{{title}}</a></h1>
+        <time datetime="{{date}}" pubdate>{{date}}</time>
+        {{#if categories}}
+            <footer>
+                <span class="categories">posted in {{#each categories}}{{this}} {{/each}}</span>
+            </footer>
+        {{/if}}
+    </article>
+  {{/entries}}
+</script>
+
+
+<script src="/javascripts/libs/lunr.min.js"></script>
+<script src="/javascripts/libs/handlebars.js"></script>
+<script src="/javascripts/libs/jXHR.js"></script>
+<script src="/javascripts/libs/URI.min.js"></script>
+<script src="/javascripts/lunr_search.js"></script>
+<script language="Javascript" type="text/javascript">
+    $(document).ready(function() {
+        return new LunrSearch('#search-query', {
+            indexUrl: "/search.json",
+            results: "#search-results",
+            entries: ".entries",
+            template: "#search-results-template"
+        });
+    });
+</script>
   
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -99,13 +134,6 @@ $(document).ready(
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:gluecksbringerei.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
   
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
@@ -145,11 +173,11 @@ $(document).ready(
 
 <div class="entry-content"><p>Mein Sofa war mir schon die ganze Zeit zu langweilig. Aber irgendwie wusste ich nicht genau wie und so schlimm war es ja nun auch nicht. Wie es der Zufall will, kam mir, bei dem Jubiläum meines Lieblings-Offline-Stoffladens &ldquo;Stoffzirkus&rdquo;, der &ldquo;Nuts for Dinner&rdquo; von Michael Miller unter die Finger.</p>
 
-<p><figure class="flickr-thumbnail center" style="width: 320px;"><a href="http://farm4.staticflickr.com/3784/12310933444_a04882c4cf_z.jpg" class="fancybox" data-title-id="flickr-photo-12310933444" data-media="photo"><img src="http://farm4.staticflickr.com/3784/12310933444_a04882c4cf_n.jpg" title="CIMG9090" style="width: 320px; height: 240px;"/></a><figcaption id="flickr-photo-12310933444"><h1><a class="flickr-link" href="http://www.flickr.com/photos/116414637@N06/12310933444">CIMG9090</a> by glücksbringerei</h1><div class="description"></div></figcaption></figure></p>
+<p><figure class="flickr-thumbnail center" style="width: 320px;"><a href="http://farm4.staticflickr.com/3784/12310933444_a04882c4cf_z.jpg" class="fancybox" data-title-id="flickr-photo-12310933444" data-media="photo"><img src="http://farm4.staticflickr.com/3784/12310933444_a04882c4cf_n.jpg" title="Eichhörnchen" style="width: 320px; height: 240px;"/></a><figcaption id="flickr-photo-12310933444"><h1><a class="flickr-link" href="http://www.flickr.com/photos/116414637@N06/12310933444">Eichhörnchen</a></h1><div class="description"></div></figcaption></figure></p>
 
 <p>Den <em>MUSSTE</em> ich haben, aber das Kunstwerk richtig zerschneiden mochte ich ihn nicht. Also was liegt näher, als den Stoff in der Mitte zu Halbieren, und zwei Kissenvorderseiten daraus zu machen. Hinten mit braunem Canvas &ldquo;aufgefüllt&rdquo; und mit CamSnaps verschlossen, zieren die Schmuckstücke jetzt unser Sofa. Schön, gell?</p>
 
-<p><figure class="flickr-thumbnail center" style="width: 320px;"><a href="http://farm8.staticflickr.com/7294/12310933544_b0c4d0e437_z.jpg" class="fancybox" data-title-id="flickr-photo-12310933544" data-media="photo"><img src="http://farm8.staticflickr.com/7294/12310933544_b0c4d0e437_n.jpg" title="CIMG9088" style="width: 320px; height: 240px;"/></a><figcaption id="flickr-photo-12310933544"><h1><a class="flickr-link" href="http://www.flickr.com/photos/116414637@N06/12310933544">CIMG9088</a> by glücksbringerei</h1><div class="description"></div></figcaption></figure></p>
+<p><figure class="flickr-thumbnail center" style="width: 320px;"><a href="http://farm8.staticflickr.com/7294/12310933544_b0c4d0e437_z.jpg" class="fancybox" data-title-id="flickr-photo-12310933544" data-media="photo"><img src="http://farm8.staticflickr.com/7294/12310933544_b0c4d0e437_n.jpg" title="Sofakissen" style="width: 320px; height: 240px;"/></a><figcaption id="flickr-photo-12310933544"><h1><a class="flickr-link" href="http://www.flickr.com/photos/116414637@N06/12310933544">Sofakissen</a></h1><div class="description"></div></figcaption></figure></p>
 
 <p>Etwas herbstlich sind sie ja schon, meine Oachkatzerl (zu hochdeutsch: Eichhörnchen), aber ich lieb sie trotzdem. &lt;3 Trotz meiner noch nicht so ausgereifen Nähkenntnisse war die Sache in einer Stunde erledigt. Ich hab einfach die alten Kissenbezüge abgemessen, ein bisschen Nahtzugabe dazu, kein Hexenwerk also. Das werde ich sicher bald wiederholen. Ein neuer &ldquo;Lieblingsstoff&rdquo; kommt bestimmt! ;&ndash;)</p>
 
@@ -223,7 +251,17 @@ die Glücksbringerin</p>
 
 <aside class="sidebar">
   
-    <section>
+    
+    <section class="search-section">
+        <form action="/search/index.html" method="get">
+  <fieldset role ="search">
+    <input type="text" id="search-query" name="q" placeholder="Suche" autocomplete="off" class="search" />
+  </fieldset>
+</form>
+
+    </section>
+
+<section>
   <h1>Aktuelle Posts</h1>
   <ul id="recent_posts">
     

@@ -64,13 +64,48 @@ $(document).ready(
 );
 </script>
 
-  <script src="/javascripts/printThis.js"></script>
-<script src="/javascripts/monthly_archive.js"></script>        
-<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<!-- Custom JS -->
+<script src="/javascripts/printThis.js"></script>
+<script src="/javascripts/monthly_archive.js"></script>
+
+<!-- lunr search support -->
+
+<script id="search-results-template" type="text/x-handlebars-template">
+  {{#entries}}
+    <article>
+        <h1><a href="{{url}}">{{title}}</a></h1>
+        <time datetime="{{date}}" pubdate>{{date}}</time>
+        {{#if categories}}
+            <footer>
+                <span class="categories">posted in {{#each categories}}{{this}} {{/each}}</span>
+            </footer>
+        {{/if}}
+    </article>
+  {{/entries}}
+</script>
+
+
+<script src="/javascripts/libs/lunr.min.js"></script>
+<script src="/javascripts/libs/handlebars.js"></script>
+<script src="/javascripts/libs/jXHR.js"></script>
+<script src="/javascripts/libs/URI.min.js"></script>
+<script src="/javascripts/lunr_search.js"></script>
+<script language="Javascript" type="text/javascript">
+    $(document).ready(function() {
+        return new LunrSearch('#search-query', {
+            indexUrl: "/search.json",
+            results: "#search-results",
+            entries: ".entries",
+            template: "#search-results-template"
+        });
+    });
+</script>
   
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -100,13 +135,6 @@ $(document).ready(
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:gluecksbringerei.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
   
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
@@ -232,7 +260,17 @@ $(document).ready(
 
 <aside class="sidebar">
   
-    <section>
+    
+    <section class="search-section">
+        <form action="/search/index.html" method="get">
+  <fieldset role ="search">
+    <input type="text" id="search-query" name="q" placeholder="Suche" autocomplete="off" class="search" />
+  </fieldset>
+</form>
+
+    </section>
+
+<section>
   <h1>Aktuelle Posts</h1>
   <ul id="recent_posts">
     

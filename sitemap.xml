@@ -52,4 +52,8 @@
         <loc>http://gluecksbringerei.github.io/robots.txt</loc>
         <lastmod>2014-02-04T22:43:40+01:00</lastmod>
     </url>
+    <url>
+        <loc>http://gluecksbringerei.github.io/search/</loc>
+        <lastmod>2014-02-07T20:23:25+01:00</lastmod>
+    </url>
 </urlset>

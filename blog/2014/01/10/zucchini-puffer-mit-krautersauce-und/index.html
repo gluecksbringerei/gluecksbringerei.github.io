@@ -63,13 +63,48 @@ $(document).ready(
 );
 </script>
 
-  <script src="/javascripts/printThis.js"></script>
-<script src="/javascripts/monthly_archive.js"></script>        
-<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<!-- Custom JS -->
+<script src="/javascripts/printThis.js"></script>
+<script src="/javascripts/monthly_archive.js"></script>
+
+<!-- lunr search support -->
+
+<script id="search-results-template" type="text/x-handlebars-template">
+  {{#entries}}
+    <article>
+        <h1><a href="{{url}}">{{title}}</a></h1>
+        <time datetime="{{date}}" pubdate>{{date}}</time>
+        {{#if categories}}
+            <footer>
+                <span class="categories">posted in {{#each categories}}{{this}} {{/each}}</span>
+            </footer>
+        {{/if}}
+    </article>
+  {{/entries}}
+</script>
+
+
+<script src="/javascripts/libs/lunr.min.js"></script>
+<script src="/javascripts/libs/handlebars.js"></script>
+<script src="/javascripts/libs/jXHR.js"></script>
+<script src="/javascripts/libs/URI.min.js"></script>
+<script src="/javascripts/lunr_search.js"></script>
+<script language="Javascript" type="text/javascript">
+    $(document).ready(function() {
+        return new LunrSearch('#search-query', {
+            indexUrl: "/search.json",
+            results: "#search-results",
+            entries: ".entries",
+            template: "#search-results-template"
+        });
+    });
+</script>
   
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -99,13 +134,6 @@ $(document).ready(
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:gluecksbringerei.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
   
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
@@ -145,7 +173,7 @@ $(document).ready(
 
 <div class="entry-content"><p>Gestern gab es im Hause Glücksbringer einen kleinen Test. Ich kochte auf Empfehlung meines Kollegen Fabi folgendes Rezept:</p>
 
-<div id='36b4d36c-55be-4e20-828d-e8888044bc53' class='receipt'><div class='header'><h3>Zucchini-Puffer mit Kräutersauce und Räucherlachs</h3><span class='print' title='Dieses Rezept ausdrucken' onclick="$('#36b4d36c-55be-4e20-828d-e8888044bc53').printThis({pageTitle: 'Zucchini-Puffer mit Kräutersauce und Räucherlachs'})"><i class='fa fa-print'></i></span></div><p>Zutaten für 2 Portionen:</p>
+<div id='8b4bd9f7-a92f-463e-8b45-5ff7cbabedb6' class='receipt'><div class='header'><h3>Zucchini-Puffer mit Kräutersauce und Räucherlachs</h3><span class='print' title='Dieses Rezept ausdrucken' onclick="$('#8b4bd9f7-a92f-463e-8b45-5ff7cbabedb6').printThis({pageTitle: 'Zucchini-Puffer mit Kräutersauce und Räucherlachs'})"><i class='fa fa-print'></i></span></div><p>Zutaten für 2 Portionen:</p>
 
 <ul>
 <li>2 Zucchini</li>
@@ -174,7 +202,7 @@ $(document).ready(
 </div>
 
 
-<p><section class="flickr-set"><figure class="flickr-thumbnail" style="width: 240px;"><a href="http://farm4.staticflickr.com/3770/12309308035_a90c2046f6_z.jpg" class="fancybox" data-title-id="flickr-photo-12309308035" data-media="photo" rel="flickr-set-72157640572599625"><img src="http://farm4.staticflickr.com/3770/12309308035_a90c2046f6_m.jpg" title="CIMG8924" style="width: 240px; height: 180px;"/></a><figcaption id="flickr-photo-12309308035"><h1><a class="flickr-link" href="http://www.flickr.com/photos/116414637@N06/12309308035">CIMG8924</a> by glücksbringerei</h1><div class="description"></div></figcaption></figure><figure class="flickr-thumbnail" style="width: 240px;"><a href="http://farm8.staticflickr.com/7422/12309470853_208a89d21c_z.jpg" class="fancybox" data-title-id="flickr-photo-12309470853" data-media="photo" rel="flickr-set-72157640572599625"><img src="http://farm8.staticflickr.com/7422/12309470853_208a89d21c_m.jpg" title="CIMG8936" style="width: 240px; height: 180px;"/></a><figcaption id="flickr-photo-12309470853"><h1><a class="flickr-link" href="http://www.flickr.com/photos/116414637@N06/12309470853">CIMG8936</a> by glücksbringerei</h1><div class="description"></div></figcaption></figure></section></p>
+<p><section class="flickr-set"><figure class="flickr-thumbnail" style="width: 240px;"><a href="http://farm4.staticflickr.com/3770/12309308035_a90c2046f6_z.jpg" class="fancybox" data-title-id="flickr-photo-12309308035" data-media="photo" rel="flickr-set-72157640572599625"><img src="http://farm4.staticflickr.com/3770/12309308035_a90c2046f6_m.jpg" title="CIMG8924" style="width: 240px; height: 180px;"/></a><figcaption id="flickr-photo-12309308035"><h1><a class="flickr-link" href="http://www.flickr.com/photos/116414637@N06/12309308035">CIMG8924</a></h1><div class="description"></div></figcaption></figure><figure class="flickr-thumbnail" style="width: 240px;"><a href="http://farm8.staticflickr.com/7422/12309470853_208a89d21c_z.jpg" class="fancybox" data-title-id="flickr-photo-12309470853" data-media="photo" rel="flickr-set-72157640572599625"><img src="http://farm8.staticflickr.com/7422/12309470853_208a89d21c_m.jpg" title="CIMG8936" style="width: 240px; height: 180px;"/></a><figcaption id="flickr-photo-12309470853"><h1><a class="flickr-link" href="http://www.flickr.com/photos/116414637@N06/12309470853">CIMG8936</a></h1><div class="description"></div></figcaption></figure></section></p>
 
 <p><strong>Fazit unseres Testessens:</strong>
 Dieses Gericht ist schnell zuzubereiten, das Highlight ist definitiv die hellgrüne Farbe der Puffer mit dem weissen Joghurt und dem lachsigen Lachs. Auch die Minze gibt dem Gericht einen frischen Touch. Uns war die Sache aber zu fettig. Obwohl ich die Puffer wie beschrieben auf ein Küchentuch gelegt habe. Vielleicht werde ich es aber wieder probieren, mal sehen. Schon allein der Farbe wegen!</p>
@@ -249,7 +277,17 @@ die glücksbringerin</p>
 
 <aside class="sidebar">
   
-    <section>
+    
+    <section class="search-section">
+        <form action="/search/index.html" method="get">
+  <fieldset role ="search">
+    <input type="text" id="search-query" name="q" placeholder="Suche" autocomplete="off" class="search" />
+  </fieldset>
+</form>
+
+    </section>
+
+<section>
   <h1>Aktuelle Posts</h1>
   <ul id="recent_posts">
     
