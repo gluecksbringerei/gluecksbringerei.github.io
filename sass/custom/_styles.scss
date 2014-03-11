@@ -3,12 +3,20 @@
 
 body {
   font-family: $sans;
+  > header h2 {
+    font-size: .8em;
+    color: #666;
+  }
   > div {
     border-bottom: none;
     > div {
       border-right: none;
     }
   }
+}
+
+h1 {
+  font-weight: normal;
 }
 
 article {
@@ -50,7 +58,6 @@ aside.sidebar {
     font-family: $post-title-font-family;
     font-size: $post-title-font-size;
     color: $title-color;
-    text-transform: lowercase;
     @media only screen and (min-width: 768px) {
       font-size: $post-title-font-size * 1.2;
     }

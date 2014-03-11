@@ -3,8 +3,11 @@
 // If you need a handy color picker try http://hslpicker.com
 
 $main-bg: #fff;
-$text-color: #666;
-$link-color: #f903ff;
+$text-color: #333;
+$link-color: #e72f72;
+$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
+$link-color-visited: adjust-color($link-color, $lightness: -20) !default;
+$link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 $header-bg: #fff;
 $title-color: #4c4b4c;
 $sidebar-bg: #fff;
